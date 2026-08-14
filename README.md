@@ -1,50 +1,50 @@
-# Frontend Mentor - Calculator app solution
+# Ravenom’s Project Portfolio
 
-This is a solution to the [Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+A static portfolio grid for Ferdinand Estoque’s web projects. Cards can be filtered by framework, searched by title or tag, sorted, and viewed in light or dark theme.
 
-## Table of contents
+Adapted from [MKAbuMattar’s Portfolio Filter](https://codepen.io/MKAbuMattar/pen/VwwKrdx) on CodePen.
 
--[Overview](#overview)
+## Features
 
--[The challenge](#the-challenge)
+- **Framework filters** — All, React, Vue, and Angular
+- **Search** — matches project titles, descriptions, tags, and framework names
+- **Sort** — default order, name A–Z, name Z–A, or by framework
+- **Project count** — shows how many items match the current filters
+- **Light / dark theme** — toggle in the toolbar; preference is saved in `localStorage` and falls back to the system color scheme
+- **Project cards** — screenshot, short description on hover, tags, GitHub, and live demo links
 
--[Screenshot](#screenshot)
+Clicking a tag on a card fills the search field with that tag.
 
--[Links](#links)
+## Run locally
 
--[My process](#my-process)
+This is a static site. No build step is required.
 
--[Built with](#built-with)
+1. Open `index.html` in a browser, or serve the folder:
 
-## Overview
+   ```bash
+   npx serve .
+   ```
 
-### The challenge
+2. Keep the `img/` directory next to `index.html` so project screenshots load.
 
-Users should be able to:
+## Project structure
 
-- See the size of the elements adjust based on their device's screen size
-- Perform mathmatical operations like addition, subtraction, multiplication, and division
-- Adjust the color theme based on their preference
+```
+dist/
+├── index.html      # Markup, project cards, and toolbar
+├── style.css       # Layout, card styles, and theme variables
+├── script.js       # Isotope filter, search, sort, count, and theme
+├── img/            # Project screenshots
+└── README.md
+```
 
-### Screenshot
+## Tech
 
-![image](https://calculator-festoqufx.vercel.app/1.png)
+- HTML, CSS, JavaScript
+- [Bootstrap 4](https://getbootstrap.com/docs/4.1/)
+- [jQuery](https://jquery.com/) and [Isotope](https://isotope.metafizzy.co/)
+- [Font Awesome](https://fontawesome.com/)
 
-### Links
+## License
 
-- Solution URL: [repository](https://github.com/amendezm/calculator-app)
-- Live Site URL: [website ](https://nextjs-calculator-app.vercel.app/)
-
-## My process
-
-### Built with
-
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-
--[React](https://reactjs.org/) - JS library
-
--[Next.js](https://nextjs.org/) - React framework
-
--[Tailwind](https://tailwindcss.com/) - For styles
+MIT. Original CodePen layout © Mohammad Abu Mattar.

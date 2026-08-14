@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravenom’s Project Portfolio.</title>
+	<link rel="icon" type="image/png" href="./img/estoque1.png">
+    <script>
+      (function() {
+        var saved = localStorage.getItem("portfolio-theme");
+        var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+
+    <header>
+      <div class="px-3 py-2 bg-dark text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <h2>
+              <i class="fas fa-laptop-code align-items-center"></i> Ravenom’s Project Portfolio.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="filters text-center">
+            <li class="active" data-filter="*">
+              <a href="#!" target="_blank">
+                <i class="fas fa-globe"></i> All </a>
+            </li>
+            <li data-filter=".react">
+              <a href="#!" target="_blank">
+                <i class="fab fa-react"></i> react </a>
+            </li>
+            <li data-filter=".vue">
+              <a href="#!" target="_blank">
+                <i class="fab fa-vuejs"></i> vue </a>
+            </li>
+            <li data-filter=".angular">
+              <a href="#!" target="_blank">
+                <i class="fab fa-angular"></i> angular </a>
+            </li>
+          </ul>
+          <div class="search-bar">
+            <label class="sr-only" for="project-search">Search projects</label>
+            <div class="search-field">
+              <i class="fas fa-search" aria-hidden="true"></i>
+              <input type="search" id="project-search" class="search-input" placeholder="Search projects..." autocomplete="off">
+            </div>
+          </div>
+          <div class="portfolio-toolbar">
+            <p class="project-count" aria-live="polite">
+              <span id="visible-count">0</span> of <span id="total-count">0</span> projects
+            </p>
+            <div class="toolbar-controls">
+              <label class="toolbar-label" for="sort-select">Sort <select id="sort-select" class="sort-select">
+                  <option value="original-order">Default</option>
+                  <option value="name-asc">Name A–Z</option>
+                  <option value="name-desc">Name Z–A</option>
+                  <option value="framework">Framework</option>
+                </select>
+              </label>
+              <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch to dark theme" title="Switch theme">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <p class="empty-state" id="empty-state" hidden>No projects match these filters.</p>
+          <div class="projects">
+            <div class="row">
+              <!-- react 1 -->
+              <div class="col-lg-4 item react CSharp">
+                <div class="project">
+                  <div class="project-head">
+                    <img src="./img/react-sodukosolver.jpg" alt="" class="img-fluid card-img">
+                    <div class="project-overlay">
+                      <h2>
+                        <i class="fab fa-react"></i>
+                      </h2>
+                    </div>
+                    <div class="project-hover">
+                      <p>A web app that solves Sudoku puzzles automatically.</p>
+                    </div>
+                  </div>
+                  <div class="project-body text-center">
+                    <h4 class="title">Soduko Solver</h4>
+                      <ul class="filters filters-tag text-center"> tag: 
+						<li data-filter=".CSharp">
+                        Typescript,
+                        </li>
+						<li data-filter=".CSharp">
+                        TailwindCSS
+                        </li>
+                      </ul>
+                    <div class="btn-group" role="group">
+                      <a href="https://github.com/festoqufx/sudoku-solver-raven" target="_blank" class="btn project-btn">
+                        <i class="fab fa-github"></i> Github </a>
+                      <a href="https://sudoku-solver-raven.vercel.app/" target="_blank" class="btn  project-btn">
+                        <i class="far fa-eye"></i> View </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- react 1 -->
+              <!-- vue 3 -->
+              <div class="col-lg-4 item vue html css jquery">
+                <div class="project">
+                  <div class="project-head">
+                    <img src="./img/vue-spacesnake.jpg" alt="" class="img-fluid card-img">
+                    <div class="project-overlay">
+                      <h2>
+                        <i class="fab fa-vuejs"></i>
+                      </h2>
+                    </div>
+                    <div class="project-hover">
+                      <p>A web-based Snake game built with Vue.js.</p>
+                    </div>
+                  </div>
+                  <div class="project-body text-center">
+                    <h4 class="title">Space Snake</h4>
+                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".html">
+                        <a href="#!" target="_blank">HTML</a>
+                      </li>
+                      <li data-filter=".css">
+                        <a href="#!" target="_blank">SCSS</a>
+                      </li>
+                      <li data-filter=".jquery">
+                        <a href="#!" target="_blank">jQuery</a>
+                      </li>
+                    </ul>
+                    <div class="btn-group" role="group">
+                      <a href="https://github.com/festoqufx/vue-space-snake-raven" target="_blank" class="btn  project-btn">
+                        <i class="fab fa-github"></i> Github </a>
+                      <a href="https://vue-space-snake-raven.vercel.app/" target="_blank" class="btn  project-btn">
+                        <i class="far fa-eye"></i> View </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- vue 3 -->
+              <!-- react 3 -->
+              <div class="col-lg-4 item react CSharp">
+                <div class="project">
+                  <div class="project-head">
+                    <img src="./img/react-itask.jpg" alt="" class="img-fluid card-img">
+                    <div class="project-overlay">
+                      <h2>
+                        <i class="fab fa-react"></i>
+                      </h2>
+                    </div>
+                    <div class="project-hover">
+                      <p>A task management app for organizing priorities, challenges, and daily productivity. </p>
+                    </div>
+                  </div>
+                  <div class="project-body text-center">
+                    <h4 class="title">iTask</h4>
+                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".CSharp">
+                        <a href="#!" target="_blank">C#</a>
+                      </li>
+                    </ul>
+                    <div class="btn-group" role="group">
+                      <a href="https://github.com/festoqufx/next-itask-raven" target="_blank" class="btn project-btn">
+                        <i class="fab fa-github"></i> Github </a>
+                      <a href="https://next-itask-raven.vercel.app/" target="_blank" class="btn  project-btn">
+                        <i class="far fa-eye"></i> View </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- react 3 -->
+              <!-- react 2 -->
+              <div class="col-lg-4 item react CSharp">
+                <div class="project">
+                  <div class="project-head">
+                    <img src="./img/react-allinonetool.jpg" alt="" class="img-fluid card-img">
+                    <div class="project-overlay">
+                      <h2>
+                        <i class="fab fa-react"></i>
+                      </h2>
+                    </div>
+                    <div class="project-hover">
+                      <p>A suite of tools for QR codes, text, Markdown, IP insights, and image compression.</p>
+                    </div>
+                  </div>
+                  <div class="project-body text-center">
+                    <h4 class="title">all in one tool</h4>
+                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".CSharp">
+                        <a href="#!" target="_blank">C#</a>
+                      </li>
+                    </ul>
+                    <div class="btn-group" role="group">
+                      <a href="https://github.com/festoqufx/all-in-one-tool-raven" target="_blank" class="btn project-btn">
+                        <i class="fab fa-github"></i> Github </a>
+                      <a href="https://all-in-one-tool-raven.vercel.app/" target="_blank" class="btn  project-btn">
+                        <i class="far fa-eye"></i> View </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- react 2 -->
+              <!-- <angular 1 -->
+              <div class="col-lg-4 item angular psd">
+                <div class="project">
+                  <div class="project-head">
+                    <img src="./img/angular-echoes.jpg" alt="" class="img-fluid card-img">
+                    <div class="project-overlay">
+                      <h2>
+                        <i class="fab fa-angular"></i>
+                      </h2>
+                    </div>
+                    <div class="project-hover">
+                      <p>An open-source YouTube music player for searching and playing videos.</p>
+                    </div>
+                  </div>
+                  <div class="project-body text-center">
+                    <h4 class="title">Echoes music player</h4>
+                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".psd">
+                        <a href="#!" target="_blank">PSD</a>
+                      </li>
+                    </ul>
+                    <div class="btn-group" role="group">
+                      <a href="https://github.com/festoqufx/festoqufx.github.io-echoes-music-player" target="_blank" class="btn  project-btn">
+                        <i class="fab fa-github"></i> Github </a>
+                      <a href="https://festoqufx-github-io-echoes-music-pl.vercel.app/#/search/videos" target="_blank" class="btn  project-btn">
+                        <i class="far fa-eye"></i> View </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <angular 1 -->
+              <!-- react 6 -->
+              <div class="col-lg-4 item react CSharp">
+                <div class="project">
+                  <div class="project-head">
+                    <img src="./img/react-sched.jpg" alt="" class="img-fluid card-img">
+                    <div class="project-overlay">
+                      <h2>
+                        <i class="fab fa-react"></i>
+                      </h2>
+                    </div>
+                    <div class="project-hover">
+                      <p>A web app for scheduling meetings, managing times, and organizing appointments.</p>
+                    </div>
+                  </div>
+                  <div class="project-body text-center">
+                    <h4 class="title">Schedule a meeting</h4>
+                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".CSharp">
+                        <a href="#!" target="_blank">C#</a>
+                      </li>
+                    </ul>
+                    <div class="btn-group" role="group">
+                      <a href="https://github.com/festoqufx/meeting-scheduler-raven" target="_blank" class="btn project-btn">
+                        <i class="fab fa-github"></i> Github </a>
+                      <a href="https://meeting-scheduler-raven.vercel.app/" target="_blank" class="btn  project-btn">
+                        <i class="far fa-eye"></i> View </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- react 6 -->
+              <!-- react 7 -->
+              <div class="col-lg-4 item react CSharp">
+                <div class="project">
+                  <div class="project-head">
+                    <img src="./img/react-weather.jpg" alt="" class="img-fluid card-img">
+                    <div class="project-overlay">
+                      <h2>
+                        <i class="fab fa-react"></i>
+                      </h2>
+                    </div>
+                    <div class="project-hover">
+                      <p>A web app that provides weather forecasts and displays upcoming conditions.</p>
+                    </div>
+                  </div>
+                  <div class="project-body text-center">
+                    <h4 class="title">Weather Forecasting</h4>
+                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".CSharp">
+                        <a href="#!" target="_blank">C#</a>
+                      </li>
+                    </ul>
+                    <div class="btn-group" role="group">
+                      <a href="https://github.com/festoqufx/the-weather-forecasting-raven-black-v1" target="_blank" class="btn project-btn">
+                        <i class="fab fa-github"></i> Github </a>
+                      <a href="https://the-weather-forecasting-raven-black.vercel.app/" target="_blank" class="btn  project-btn">
+                        <i class="far fa-eye"></i> View </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- react 7 -->
+              <!-- <vue 5 -->
+              <div class="col-lg-4 item vue html css javascript">
+                <div class="project">
+                  <div class="project-head">
+                    <img src="./img/vue-dinnerwheel.jpg" alt="" class="img-fluid card-img">
+                    <div class="project-overlay">
+                      <h2>
+                        <i class="fab fa-vuejs"></i>
+                      </h2>
+                    </div>
+                    <div class="project-hover">
+                      <p>A fun meal-picker wheel that randomly suggests what to have for dinner.</p>
+                    </div>
+                  </div>
+                  <div class="project-body text-center">
+                    <h4 class="title">What's for dinner</h4>
+                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".html">
+                        <a href="#!" target="_blank">HTML</a>
+                      </li>
+                      <li data-filter=".css">
+                        <a href="#!" target="_blank">CSS</a>
+                      </li>
+                      <li data-filter=".javascript">
+                        <a href="#!" target="_blank">JavaScript</a>
+                      </li>
+                    </ul>
+                    <div class="btn-group" role="group">
+                      <a href="https://github.com/festoqufx/vue-whats-for-dinner-wheel-raven" target="_blank" class="btn  project-btn">
+                        <i class="fab fa-github"></i> Github </a>
+                      <a href="https://vue-whats-for-dinner-wheel-raven.vercel.app/" target="_blank" class="btn  project-btn">
+                        <i class="far fa-eye"></i> View </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <vue 5 -->
+              <!-- react 9 -->
+              <div class="col-lg-4 item react CSharp">
+                <div class="project">
+                  <div class="project-head">
+                    <img src="./img/react-worldtime.jpg" alt="" class="img-fluid card-img">
+                    <div class="project-overlay">
+                      <h2>
+                        <i class="fab fa-react"></i>
+                      </h2>
+                    </div>
+                    <div class="project-hover">
+                      <p>A global clock app showing current times across major cities and time zones. </p>
+                    </div>
+                  </div>
+                  <div class="project-body text-center">
+                    <h4 class="title">World time</h4>
+                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".CSharp">
+                        <a href="#!" target="_blank">C#</a>
+                      </li>
+                    </ul>
+                    <div class="btn-group" role="group">
+                      <a href="https://github.com/festoqufx/next-world-time-raven" target="_blank" class="btn project-btn">
+                        <i class="fab fa-github"></i> Github </a>
+                      <a href="https://next-world-time-raven-v1.vercel.app/" target="_blank" class="btn  project-btn">
+                        <i class="far fa-eye"></i> View </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- react 9 -->
+              <!-- vue 4 -->
+              <div class="col-lg-4 item vue html css jquery">
+                <div class="project">
+                  <div class="project-head">
+                    <img src="./img/vue-agecal.jpg" alt="" class="img-fluid card-img">
+                    <div class="project-overlay">
+                      <h2>
+                        <i class="fab fa-vuejs"></i>
+                      </h2>
+                    </div>
+                    <div class="project-hover">
+                      <p>A simple age calculator that determines your exact age from your birth date.</p>
+                    </div>
+                  </div>
+                  <div class="project-body text-center">
+                    <h4 class="title">Age calculator</h4>
+                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".html">
+                        <a href="#!" target="_blank">HTML</a>
+                      </li>
+                      <li data-filter=".css">
+                        <a href="#!" target="_blank">CSS</a>
+                      </li>
+                      <li data-filter=".jquery">
+                        <a href="#!" target="_blank">jQuery</a>
+                      </li>
+                    </ul>
+                    <div class="btn-group" role="group">
+                      <a href="https://github.com/festoqufx/vue-age-calculator-raven" target="_blank" class="btn  project-btn">
+                        <i class="fab fa-github"></i> Github </a>
+                      <a href="https://vue-age-calculator-raven.vercel.app/" target="_blank" class="btn  project-btn">
+                        <i class="far fa-eye"></i> View </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- vue 4 -->
+              <!-- <angular 2-->
+              <div class="col-lg-4 item angular psd">
+                <div class="project">
+                  <div class="project-head">
+                    <img src="./img/angular-memory.jpg" alt="" class="img-fluid card-img">
+                    <div class="project-overlay">
+                      <h2>
+                        <i class="fab fa-angular"></i>
+                      </h2>
+                    </div>
+                    <div class="project-hover">
+                      <p>A memory card game where you match pairs of cards to test your memory.</p>
+                    </div>
+                  </div>
+                  <div class="project-body text-center">
+                    <h4 class="title">Memory Matrix</h4>
+                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".psd">
+                        <a href="#!" target="_blank">PSD</a>
+                      </li>
+                    </ul>
+                    <div class="btn-group" role="group">
+                      <a href="https://github.com/festoqufx/angular-memory-card-game-raven" target="_blank" class="btn  project-btn">
+                        <i class="fab fa-github"></i> Github </a>
+                      <a href="https://angular-memory-card-game-raven.vercel.app/" target="_blank" class="btn  project-btn">
+                        <i class="far fa-eye"></i> View </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <angular 2-->
+              <!-- vue 2 -->
+              <div class="col-lg-4 item vue html css jquery">
+                <div class="project">
+                  <div class="project-head">
+                    <img src="./img/vue-signature.jpg" alt="" class="img-fluid card-img">
+                    <div class="project-overlay">
+                      <h2>
+                        <i class="fab fa-vuejs"></i>
+                      </h2>
+                    </div>
+                    <div class="project-hover">
+                      <p>A web app for creating and managing digital signatures for documents.</p>
+                    </div>
+                  </div>
+                  <div class="project-body text-center">
+                    <h4 class="title">Digital Signature Pro</h4>
+                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".html">
+                        <a href="#!" target="_blank">HTML</a>
+                      </li>
+                      <li data-filter=".css">
+                        <a href="#!" target="_blank">CSS</a>
+                      </li>
+                      <li data-filter=".jquery">
+                        <a href="#!" target="_blank">jQuery</a>
+                      </li>
+                    </ul>
+                    <div class="btn-group" role="group">
+                      <a href="https://github.com/festoqufx/digital-signature-raven-pro" target="_blank" class="btn  project-btn">
+                        <i class="fab fa-github"></i> Github </a>
+                      <a href="https://digital-signature-raven-pro.vercel.app/" target="_blank" class="btn  project-btn">
+                        <i class="far fa-eye"></i> View </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- vue 2 -->
+              <!-- react 8 -->
+              <div class="col-lg-4 item react CSharp">
+                <div class="project">
+                  <div class="project-head">
+                    <img src="./img/react-webcompiler.jpg" alt="" class="img-fluid card-img">
+                    <div class="project-overlay">
+                      <h2>
+                        <i class="fab fa-react"></i>
+                      </h2>
+                    </div>
+                    <div class="project-hover">
+                      <p>A web-based coding environment for writing, editing, and running code directly in your browser.</p>
+                    </div>
+                  </div>
+                  <div class="project-body text-center">
+                    <h4 class="title">Next IDE</h4>
+                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".CSharp">
+                        <a href="#!" target="_blank">C#</a>
+                      </li>
+                    </ul>
+                    <div class="btn-group" role="group">
+                      <a href="https://github.com/festoqufx/next-web-based-ide-raven" target="_blank" class="btn project-btn">
+                        <i class="fab fa-github"></i> Github </a>
+                      <a href="https://next-web-based-ide-raven.vercel.app/" target="_blank" class="btn  project-btn">
+                        <i class="far fa-eye"></i> View </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- react 8 -->
+              <!-- vue 1 -->
+              <div class="col-lg-4 item vue html css javascript">
+                <div class="project">
+                  <div class="project-head">
+                    <img src="./img/vue-passwordgen.jpg" alt="" class="img-fluid card-img">
+                    <div class="project-overlay">
+                      <h2>
+                        <i class="fab fa-vuejs"></i>
+                      </h2>
+                    </div>
+                    <div class="project-hover">
+                      <p>A password generator that creates strong, customizable passwords for better security.</p>
+                    </div>
+                  </div>
+                  <div class="project-body text-center">
+                    <h4 class="title">Password generator</h4>
+                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".html">
+                        <a href="#!" target="_blank">HTML</a>
+                      </li>
+                      <li data-filter=".css">
+                        <a href="#!" target="_blank">CSS</a>
+                      </li>
+                      <li data-filter=".javascript">
+                        <a href="#!" target="_blank">JavaScript</a>
+                      </li>
+                    </ul>
+                    <div class="btn-group" role="group">
+                      <a href="https://github.com/festoqufx/vue-password-generator-raven" target="_blank" class="btn  project-btn">
+                        <i class="fab fa-github"></i> Github </a>
+                      <a href="https://vue-password-generator-raven.vercel.app/" target="_blank" class="btn  project-btn">
+                        <i class="far fa-eye"></i> View </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- vue 1 -->
+              <!-- react 4 -->
+              <div class="col-lg-4 item react CSharp">
+                <div class="project">
+                  <div class="project-head">
+                    <img src="./img/react-personalsite.jpg" alt="" class="img-fluid card-img">
+                    <div class="project-overlay">
+                      <h2>
+                        <i class="fab fa-react"></i>
+                      </h2>
+                    </div>
+                    <div class="project-hover">
+                      <p>A personal portfolio website showcasing Ferdinand Estoque’s projects, skills, and experience.</p>
+                    </div>
+                  </div>
+                  <div class="project-body text-center">
+                    <h4 class="title">My personal site</h4>
+                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".CSharp">
+                        <a href="#!" target="_blank">C#</a>
+                      </li>
+                    </ul>
+                    <div class="btn-group" role="group">
+                      <a href="https://github.com/festoqufx/festoque_v1_blkred" target="_blank" class="btn project-btn">
+                        <i class="fab fa-github"></i> Github </a>
+                      <a href="https://festoque-v1-blkred.vercel.app/" target="_blank" class="btn  project-btn">
+                        <i class="far fa-eye"></i> View </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- react 4 -->
+              <!-- react 5 -->
+              <div class="col-lg-4 item react CSharp">
+                <div class="project">
+                  <div class="project-head">
+                    <img src="./img/react-lottogen.jpg" alt="" class="img-fluid card-img">
+                    <div class="project-overlay">
+                      <h2>
+                        <i class="fab fa-react"></i>
+                      </h2>
+                    </div>
+                    <div class="project-hover">
+                      <p>A lottery tool that analyzes Pick 2 probabilities and suggests number combinations.</p>
+                    </div>
+                  </div>
+                  <div class="project-body text-center">
+                    <h4 class="title">PCSO Lotto Generator</h4>
+                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".CSharp">
+                        <a href="#!" target="_blank">C#</a>
+                      </li>
+                    </ul>
+                    <div class="btn-group" role="group">
+                      <a href="https://github.com/festoqufx/lotto-probability-pick" target="_blank" class="btn project-btn">
+                        <i class="fab fa-github"></i> Github </a>
+                      <a href="https://lotto-probability-pick-2.vercel.app/" target="_blank" class="btn  project-btn">
+                        <i class="far fa-eye"></i> View </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- react 5 -->
+            </div>
+          </div>
+        </div>
+      </div>
+	</div>
+
+
+      <div class="container">
+        <footer class="py-3 my-4">
+      
+          <p class="text-center text-body-secondary">2026 © Copyright  FERDINAND ESTOQUE . All Rights Reserved</p>
+        </footer>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://kit.fontawesome.com/177aa6247e.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script src="./script.js"></script>
+  </body>
+</html>
