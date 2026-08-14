@@ -14,7 +14,7 @@
   $totalCount.text(totalProjects);
 
   function currentTheme() {
-    return document.documentElement.getAttribute("data-theme") || "light";
+    return document.documentElement.getAttribute("data-theme") || "dark";
   }
 
   function updateThemeToggle() {

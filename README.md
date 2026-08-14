@@ -2,7 +2,7 @@
 
 A static portfolio grid for Ferdinand Estoque’s web projects. Cards can be filtered by framework, searched by title or tag, sorted, and viewed in light or dark theme.
 
-Adapted from [MKAbuMattar’s Portfolio Filter](https://codepen.io/MKAbuMattar/pen/VwwKrdx) on CodePen.
+
 
 ## Features
 
