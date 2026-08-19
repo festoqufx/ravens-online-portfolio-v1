@@ -11,21 +11,42 @@
         document.documentElement.setAttribute("data-theme", theme);
       })();
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <header>
+
+ <header>
+  <div class="px-3 py-2 text-bg-dark border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <h2>
+              <i class="fas fa-laptop-code align-items-center"></i> Ravenom’s Project Portfolio
+            </h2>
+      
+      </div>
+    </div>
+  </div>
+  <div class="px-3 py-2 border-bottom mb-3">
+    <div class="container d-flex flex-wrap justify-content-center">
+      <p>A modern project portfolio showcasing web apps, games, tools, skills, and creative work.</p>
+      </div>
+    </div>
+  
+</header>
+      <!-- <header>
       <div class="px-3 py-2 bg-dark text-white">
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <h2>
-              <i class="fas fa-laptop-code align-items-center"></i> Ravenom’s Project Portfolio.
+              <i class="fas fa-laptop-code align-items-center"></i> Ravenom’s Project Portfolio
             </h2>
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -48,6 +69,12 @@
               <a href="#!" target="_blank" >
                 <i class="fab fa-angular"></i> angular </a>
             </li>
+            <li data-filter=".python">
+              <a href="#!" target="_blank" >
+                <i class="fab fa-python"></i> python </a>
+            </li>
+
+           
           </ul>
           <div class="search-bar">
             <label class="sr-only" for="project-search">Search projects</label>
@@ -97,7 +124,7 @@
                   <div class="project-body text-center">
                     <h4 class="title">Soduko Solver</h4>
                     <ul class="filters filters-tag text-center"> tag: <li data-filter=".CSharp">
-                        <a href="#!" target="_blank" >C#</a>
+                        <a href="#!" target="_blank" >React, TypeScript, Tailwind</a>
                       </li>
                     </ul>
                     <div class="btn-group" role="group">
@@ -130,13 +157,7 @@
                   <div class="project-body text-center">
                     <h4 class="title">Space Snake</h4>
                     <ul class="filters filters-tag text-center"> tag: <li data-filter=".html">
-                        <a href="#!" target="_blank" >HTML</a>
-                      </li>
-                      <li data-filter=".css">
-                        <a href="#!" target="_blank" >CSS</a>
-                      </li>
-                      <li data-filter=".jquery">
-                        <a href="#!" target="_blank" >jQuery</a>
+                        <a href="#!" target="_blank" >Vue, SCSS</a>
                       </li>
                     </ul>
                     <div class="btn-group" role="group">
@@ -167,7 +188,7 @@
                   <div class="project-body text-center">
                     <h4 class="title">iTask</h4>
                     <ul class="filters filters-tag text-center"> tag: <li data-filter=".CSharp">
-                        <a href="#!" target="_blank" >C#</a>
+                        <a href="#!" target="_blank" >React, TypeScript, Tailwind, Next</a>
                       </li>
                     </ul>
                     <div class="btn-group" role="group">
@@ -200,7 +221,7 @@
                   <div class="project-body text-center">
                     <h4 class="title">all in one tool</h4>
                     <ul class="filters filters-tag text-center"> tag: <li data-filter=".CSharp">
-                        <a href="#!" target="_blank" >C#</a>
+                        <a href="#!" target="_blank" >React, TypeScript, Tailwind, Next</a>
                       </li>
                     </ul>
                     <div class="btn-group" role="group">
@@ -231,7 +252,7 @@
                   <div class="project-body text-center">
                     <h4 class="title">Echoes music player</h4>
                     <ul class="filters filters-tag text-center"> tag: <li data-filter=".psd">
-                        <a href="#!" target="_blank" >PSD</a>
+                        <a href="#!" target="_blank" >Angular, Firebase, Typescript, Shell, Karma </a>
                       </li>
                     </ul>
                     <div class="btn-group" role="group">
@@ -246,13 +267,13 @@
               <!-- <angular 1 -->
 
 
-			  <!-- react 6 -->
-              <div class="col-lg-4 item react CSharp">
+			  <!-- python 1 -->
+              <div class="col-lg-4 item python">
                 <div class="project">
                   <div class="project-head">
                     <img src="./img/react-sched.jpg" alt="" class="img-fluid card-img">
                     <div class="project-overlay">
-                      <h2><i class="fab fa-react"></i></h2>
+                      <h2><i class="fab fa-python"></i></h2>
                     </div>
                     <div class="project-hover">
                       <p>A web app for scheduling meetings, managing times, and organizing appointments.</p>
@@ -260,8 +281,8 @@
                   </div>
                   <div class="project-body text-center">
                     <h4 class="title">Schedule a meeting</h4>
-                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".CSharp">
-                        <a href="#!" target="_blank" >C#</a>
+                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".python">
+                        <a href="#!" target="_blank" >Python, VanillaJS, Yaml</a>
                       </li>
                     </ul>
                     <div class="btn-group" role="group">
@@ -273,7 +294,7 @@
                   </div>
                 </div>
               </div>
-              <!-- react 6 -->
+              <!-- python 1 -->
 
 			  <!-- react 7 -->
               <div class="col-lg-4 item react CSharp">
@@ -290,7 +311,7 @@
                   <div class="project-body text-center">
                     <h4 class="title">Weather Forecasting</h4>
                     <ul class="filters filters-tag text-center"> tag: <li data-filter=".CSharp">
-                        <a href="#!" target="_blank" >C#</a>
+                        <a href="#!" target="_blank" >React, MUI</a>
                       </li>
                     </ul>
                     <div class="btn-group" role="group">
@@ -321,13 +342,7 @@
                   <div class="project-body text-center">
                     <h4 class="title">What's for dinner</h4>
                     <ul class="filters filters-tag text-center"> tag: <li data-filter=".html">
-                        <a href="#!" target="_blank" >HTML</a>
-                      </li>
-                      <li data-filter=".css">
-                        <a href="#!" target="_blank" >CSS</a>
-                      </li>
-                      <li data-filter=".javascript">
-                        <a href="#!" target="_blank" >JavaScript</a>
+                        <a href="#!" target="_blank" >Vue</a>
                       </li>
                     </ul>
                     <div class="btn-group" role="group">
@@ -357,7 +372,7 @@
                   <div class="project-body text-center">
                     <h4 class="title">World time</h4>
                     <ul class="filters filters-tag text-center"> tag: <li data-filter=".CSharp">
-                        <a href="#!" target="_blank" >C#</a>
+                        <a href="#!" target="_blank" >React, TypeScript, Tailwind, Next</a>
                       </li>
                     </ul>
                     <div class="btn-group" role="group">
@@ -388,13 +403,7 @@
                   <div class="project-body text-center">
                     <h4 class="title">Age calculator</h4>
                     <ul class="filters filters-tag text-center"> tag: <li data-filter=".html">
-                        <a href="#!" target="_blank" >HTML</a>
-                      </li>
-                      <li data-filter=".css">
-                        <a href="#!" target="_blank" >CSS</a>
-                      </li>
-                      <li data-filter=".jquery">
-                        <a href="#!" target="_blank" >jQuery</a>
+                        <a href="#!" target="_blank" >Vue</a>
                       </li>
                     </ul>
                     <div class="btn-group" role="group">
@@ -428,7 +437,7 @@
                   <div class="project-body text-center">
                     <h4 class="title">Memory Matrix</h4>
                     <ul class="filters filters-tag text-center"> tag: <li data-filter=".psd">
-                        <a href="#!" target="_blank" >PSD</a>
+                        <a href="#!" target="_blank" >Angular, TypeScript, SCSS, Karma</a>
                       </li>
                     </ul>
                     <div class="btn-group" role="group">
@@ -461,13 +470,7 @@
                   <div class="project-body text-center">
                     <h4 class="title">Digital Signature Pro</h4>
                     <ul class="filters filters-tag text-center"> tag: <li data-filter=".html">
-                        <a href="#!" target="_blank" >HTML</a>
-                      </li>
-                      <li data-filter=".css">
-                        <a href="#!" target="_blank" >CSS</a>
-                      </li>
-                      <li data-filter=".jquery">
-                        <a href="#!" target="_blank" >jQuery</a>
+                        <a href="#!" target="_blank" >Vue, TypeScript, Nuxt</a>
                       </li>
                     </ul>
                     <div class="btn-group" role="group">
@@ -501,7 +504,7 @@
                   <div class="project-body text-center">
                     <h4 class="title">Next IDE</h4>
                     <ul class="filters filters-tag text-center"> tag: <li data-filter=".CSharp">
-                        <a href="#!" target="_blank" >C#</a>
+                        <a href="#!" target="_blank" >React, Dockerfile, Typescript, Next</a>
                       </li>
                     </ul>
                     <div class="btn-group" role="group">
@@ -531,13 +534,7 @@
                   <div class="project-body text-center">
                     <h4 class="title">Password generator</h4>
                     <ul class="filters filters-tag text-center"> tag: <li data-filter=".html">
-                        <a href="#!" target="_blank" >HTML</a>
-                      </li>
-                      <li data-filter=".css">
-                        <a href="#!" target="_blank" >CSS</a>
-                      </li>
-                      <li data-filter=".javascript">
-                        <a href="#!" target="_blank" >JavaScript</a>
+                        <a href="#!" target="_blank" >Vue, SCSS</a>
                       </li>
                     </ul>
                     <div class="btn-group" role="group">
@@ -568,7 +565,7 @@
                   <div class="project-body text-center">
                     <h4 class="title">My personal site</h4>
                     <ul class="filters filters-tag text-center"> tag: <li data-filter=".CSharp">
-                        <a href="#!" target="_blank" >C#</a>
+                        <a href="#!" target="_blank" >React, Tailwind</a>
                       </li>
                     </ul>
                     <div class="btn-group" role="group">
@@ -582,7 +579,7 @@
               </div>
               <!-- react 4 -->
 
-			<!-- react 5 -->
+			      <!-- react 5 -->
               <div class="col-lg-4 item react CSharp">
                 <div class="project">
                   <div class="project-head">
@@ -597,7 +594,7 @@
                   <div class="project-body text-center">
                     <h4 class="title">PCSO Lotto Generator</h4>
                     <ul class="filters filters-tag text-center"> tag: <li data-filter=".CSharp">
-                        <a href="#!" target="_blank" >C#</a>
+                        <a href="#!" target="_blank" >React, Python, Flask</a>
                       </li>
                     </ul>
                     <div class="btn-group" role="group">
@@ -612,16 +609,184 @@
               <!-- react 5 -->
 
 
+
+            
+
+              <!-- <angular 3 -->
+              <div class="col-lg-4 item angular psd">
+                <div class="project">
+                  <div class="project-head">
+                    <img src="./img/angular-guess-the-word.jpg" alt="" class="img-fluid card-img">
+                    <div class="project-overlay">
+                      <h2><i class="fab fa-angular"></i></h2>
+                    </div>
+                    <div class="project-hover">
+                      <p>A fun word-guessing game with scoring, shuffled words, and a simple interactive interface.</p>
+                    </div>
+                  </div>
+                  <div class="project-body text-center">
+                    <h4 class="title">Word Scramble, Guess the WORD</h4>
+                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".psd">
+                        <a href="#!" target="_blank" >Angular, TypeScript</a>
+                      </li>
+                    </ul>
+                    <div class="btn-group" role="group">
+                      <a href="https://github.com/festoqufx/angular-guess-the-word-raven" target="_blank"  class="btn  project-btn">
+                        <i class="fab fa-github"></i> Github </a>
+                      <a href="https://angular-guess-the-word-raven.vercel.app/" target="_blank"  class="btn  project-btn">
+                        <i class="far fa-eye"></i> View </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <angular 3 -->
+
+
+
+               <!-- react 5 b -->
+              <div class="col-lg-4 item react CSharp">
+                <div class="project">
+                  <div class="project-head">
+                    <img src="./img/react-blackjack.jpg" alt="" class="img-fluid card-img">
+                    <div class="project-overlay">
+                      <h2><i class="fab fa-react"></i></h2>
+                    </div>
+                    <div class="project-hover">
+                      <p>A sleek single-deck Blackjack game with a casino-style table, cards, and interactive gameplay.</p>
+                    </div>
+                  </div>
+                  <div class="project-body text-center">
+                    <h4 class="title">Single deck table Blackjack</h4>
+                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".CSharp">
+                        <a href="#!" target="_blank" >React, TypeScript</a>
+                      </li>
+                    </ul>
+                    <div class="btn-group" role="group">
+                      <a href="https://github.com/festoqufx/react-single-deck-table-blackjack-raven" target="_blank"  class="btn project-btn">
+                        <i class="fab fa-github"></i> Github </a>
+                      <a href="https://react-single-deck-table-blackjack-r-alpha.vercel.app/" target="_blank"  class="btn  project-btn">
+                        <i class="far fa-eye"></i> View </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           <!-- react 5 b -->
+
+
+               <!-- react 5 c -->
+              <div class="col-lg-4 item react CSharp">
+                <div class="project">
+                  <div class="project-head">
+                    <img src="./img/react-ipod.jpg" alt="" class="img-fluid card-img">
+                    <div class="project-overlay">
+                      <h2><i class="fab fa-react"></i></h2>
+                    </div>
+                    <div class="project-hover">
+                      <p>A sleek React iPod music player UI with classic controls, menus, and retro styling.</p>
+                    </div>
+                  </div>
+                  <div class="project-body text-center">
+                    <h4 class="title">React iPod</h4>
+                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".CSharp">
+                        <a href="#!" target="_blank" >React, Babel</a>
+                      </li>
+                    </ul>
+                    <div class="btn-group" role="group">
+                      <a href="https://github.com/festoqufx/react-ipod-ui-player-raven" target="_blank"  class="btn project-btn">
+                        <i class="fab fa-github"></i> Github </a>
+                      <a href="https://react-ipod-ui-player-raven.vercel.app/" target="_blank"  class="btn  project-btn">
+                        <i class="far fa-eye"></i> View </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             <!-- react 5 c -->
+
+
+             <!-- react 5 d -->
+              <div class="col-lg-4 item react CSharp">
+                <div class="project">
+                  <div class="project-head">
+                    <img src="./img/react-brick-game.jpg" alt="" class="img-fluid card-img">
+                    <div class="project-overlay">
+                      <h2><i class="fab fa-react"></i></h2>
+                    </div>
+                    <div class="project-hover">
+                      <p>A retro brick-breaking arcade game with colorful blocks, classic gameplay, and responsive controls.</p>
+                    </div>
+                  </div>
+                  <div class="project-body text-center">
+                    <h4 class="title">Brick game</h4>
+                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".CSharp">
+                        <a href="#!" target="_blank" >React, Less</a>
+                      </li>
+                    </ul>
+                    <div class="btn-group" role="group">
+                      <a href="https://github.com/festoqufx/festoqufx.github.io-brickgame" target="_blank"  class="btn project-btn">
+                        <i class="fab fa-github"></i> Github </a>
+                      <a href="https://festoqufx-github-io-brickgame.vercel.app/" target="_blank"  class="btn  project-btn">
+                        <i class="far fa-eye"></i> View </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             <!-- react 5 d -->
+
+
+
+             
+   <!-- react 5 a-->
+              <div class="col-lg-4 item react CSharp">
+                <div class="project">
+                  <div class="project-head">
+                    <img src="./img/react-chess.jpg" alt="" class="img-fluid card-img">
+                    <div class="project-overlay">
+                      <h2><i class="fab fa-react"></i></h2>
+                    </div>
+                    <div class="project-hover">
+                      <p>A sleek chess game with a classic board, interactive pieces, and a polished modern interface.</p>
+                    </div>
+                  </div>
+                  <div class="project-body text-center">
+                    <h4 class="title">World of chess</h4>
+                    <ul class="filters filters-tag text-center"> tag: <li data-filter=".CSharp">
+                        <a href="#!" target="_blank" >React, Babel</a>
+                      </li>
+                    </ul>
+                    <div class="btn-group" role="group">
+                      <a href="https://github.com/festoqufx/react-world-of-chess-raven" target="_blank"  class="btn project-btn">
+                        <i class="fab fa-github"></i> Github </a>
+                      <a href="https://react-world-of-chess-raven.vercel.app/" target="_blank"  class="btn  project-btn">
+                        <i class="far fa-eye"></i> View </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             <!-- react 5 a-->
+
+
+
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" style="color: white;">
+    <p class="col-md-4 mb-0 text-body-secondary" style="color: white !important;">© 2025 Company, Inc</p>
+    
+    <a href="https://ferdinandestoque.com/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none" aria-label="Bootstrap">
+      <h3 style="color: white;"><i class="fas fa-laptop-code align-items-center"></i> RAVENOM</h3>
+    </a>
+
+  </footer>
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/177aa6247e.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
     <script src="./script.js"></script>
   </body>
 </html>

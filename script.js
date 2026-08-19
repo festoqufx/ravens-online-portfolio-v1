@@ -85,6 +85,9 @@
         if ($(itemElem).hasClass("angular")) {
           return "3-angular";
         }
+        if ($(itemElem).hasClass("python")) {
+          return "4-python";
+        }
         return "9-other";
       }
     }
