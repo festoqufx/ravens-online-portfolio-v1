@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var $projects = $(".projects");
+  var $projects = $(".projects .row");
   var $visibleCount = $("#visible-count");
   var $totalCount = $("#total-count");
   var $emptyState = $("#empty-state");

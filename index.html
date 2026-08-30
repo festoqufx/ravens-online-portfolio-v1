@@ -16,6 +16,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body>
 
@@ -51,8 +52,10 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-
-
+          <div class="text-center my-4" style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <lottie-player src="./games.svg" loop autoplay background="transparent" style="display: none;"></lottie-player>
+            <img src="./games.svg" alt="Games Animation" style="width: 100%; max-width: 320px; height: auto; display: block; margin: 0 auto;" />
+          </div>
           <ul class="filters text-center">
             <li class="active" data-filter="*">
               <a href="#!" target="_blank" >
@@ -763,10 +766,12 @@
                   </div>
                 </div>
               </div>
-             <!-- react 5 a-->
+              <!-- react 5 a-->
 
-
-
+            </div>
+            <div class="text-center my-4" style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+              <lottie-player src="./Hi.svg" loop autoplay background="transparent" style="display: none;"></lottie-player>
+              <img src="./Hi.svg" alt="Hi Animation" style="width: 100%; max-width: 320px; height: auto; display: block; margin: 0 auto;" />
             </div>
           </div>
         </div>
